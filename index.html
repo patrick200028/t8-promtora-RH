@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T8 Promotora - Inscrição</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            max-width: 600px;
+            background: white;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        main h2 {
+            color: #004aad;
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="file"] {
+            padding: 3px;
+        }
+        button {
+            margin-top: 15px;
+            background-color: #004aad;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003580;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #004aad;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>T8 Promotora</h1>
+        <p>Vaga: Consultor de Cobrança Júnior - Sem Experiência</p>
+        <p>Remuneração: R$ 1.900 a R$ 3.000</p>
+    </header>
+
+    <main>
+        <h2>Formulário de Inscrição</h2>
+        <form action="https://formsubmit.co/tpromotora8@gmail.com" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="sucesso.html">
+
+            <label>Nome Completo</label>
+            <input type="text" name="nome" required>
+
+            <label>E-mail</label>
+            <input type="email" name="email" required>
+
+            <label>Telefone</label>
+            <input type="tel" name="telefone" required>
+
+            <label>Data de Nascimento</label>
+            <input type="date" name="nascimento" required>
+
+            <label>Endereço</label>
+            <input type="text" name="endereco" required>
+
+            <label>Foto do RG</label>
+            <input type="file" name="rg" accept="image/*" required>
+
+            <label>Comprovante de Residência</label>
+            <input type="file" name="comprovante" accept="image/*" required>
+
+            <label>Foto do Rosto</label>
+            <input type="file" name="foto" accept="image/*" required>
+
+            <label>Observações</label>
+            <textarea name="observacoes" rows="4" placeholder="Informações adicionais..."></textarea>
+
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2025 T8 Promotora - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
