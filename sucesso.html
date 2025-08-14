@@ -10,48 +10,54 @@
             background: #f5f5f5;
             margin: 0;
             padding: 0;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #004aad;
             color: white;
             padding: 20px;
-        }
-        header h1 {
-            margin: 0;
+            text-align: center;
         }
         main {
-            max-width: 600px;
-            background: white;
-            margin: 40px auto;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        main h2 {
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+        h2 {
             color: #004aad;
         }
         p {
-            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
         }
         a {
             display: inline-block;
             margin-top: 20px;
-            background-color: #004aad;
+            background: #004aad;
             color: white;
             padding: 10px 15px;
-            text-decoration: none;
             border-radius: 5px;
+            text-decoration: none;
         }
         a:hover {
-            background-color: #003580;
+            background: #003580;
         }
         footer {
             text-align: center;
             padding: 15px;
             background-color: #004aad;
             color: white;
-            margin-top: 40px;
         }
     </style>
 </head>
@@ -62,10 +68,12 @@
     </header>
 
     <main>
-        <h2>Inscrição Enviada com Sucesso!</h2>
-        <p>Obrigado por se candidatar à vaga de <strong>Consultor de Cobrança Júnior</strong>.</p>
-        <p>Nossa equipe de RH entrará em contato em breve.</p>
-        <a href="index.html">Voltar para o Início</a>
+        <div class="box">
+            <h2>Inscrição Enviada com Sucesso!</h2>
+            <p>Obrigado por se inscrever para a vaga de <strong>Consultor de Cobrança Júnior</strong>.</p>
+            <p>Nosso time de RH entrará em contato em breve.</p>
+            <a href="index.html">Voltar para o Início</a>
+        </div>
     </main>
 
     <footer>
