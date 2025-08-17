@@ -6,79 +6,59 @@
     <title>Inscrição Enviada - T8 Promotora</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #004aad;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            flex: 1;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1612831455540-1e88f7b6ee14?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        .box {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            height: 100vh;
+            color: white;
             text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 74, 173, 0.85); /* azul semitransparente */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
             max-width: 500px;
         }
-        h2 {
-            color: #004aad;
+
+        h1 {
+            margin-top: 0;
+            font-size: 2em;
         }
+
         p {
-            color: #333;
-            margin-top: 10px;
+            font-size: 1.2em;
+            margin: 20px 0;
         }
+
         a {
             display: inline-block;
             margin-top: 20px;
-            background: #004aad;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #004aad;
             text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
         }
+
         a:hover {
-            background: #003580;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #004aad;
-            color: white;
+            background-color: #e0e0e0;
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>T8 Promotora</h1>
-    </header>
-
-    <main>
-        <div class="box">
-            <h2>Inscrição Enviada com Sucesso!</h2>
-            <p>Obrigado por se inscrever para a vaga de <strong>Consultor de Cobrança Júnior</strong>.</p>
-            <p>Nosso time de RH entrará em contato em breve.</p>
-            <a href="index.html">Voltar para o Início</a>
-        </div>
-    </main>
-
-    <footer>
-        &copy; 2025 T8 Promotora - Todos os direitos reservados.
-    </footer>
-
+    <div class="container">
+        <h1>Inscrição Enviada!</h1>
+        <p>Obrigado por se inscrever na T8 Promotora. <br>
+        Em breve entraremos em contato.</p>
+        <a href="https://vermillion-vacherin-3a1626.netlify.app/">Voltar para o site</a>
+    </div>
 </body>
 </html>
