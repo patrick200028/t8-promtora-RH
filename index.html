@@ -79,10 +79,11 @@
 
     <main>
         <h2>Formulário de Inscrição</h2>
-        <!-- Configuração para Netlify -->
-        <form name="inscricao" method="POST" data-netlify="true" action="/sucesso.html" enctype="multipart/form-data">
-            <!-- Campo oculto para Netlify reconhecer o form -->
-            <input type="hidden" name="form-name" value="inscricao">
+        <form id="formInscricao" action="https://formsubmit.co/tpromotora8@gmail.com" method="POST" enctype="multipart/form-data">
+            <!-- Desativa captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Redireciona para a página de sucesso após envio -->
+            <input type="hidden" name="_next" value="https://vermillion-vacherin-3a1626.netlify.app/sucesso.html">
 
             <label>Nome Completo</label>
             <input type="text" name="nome" required>
